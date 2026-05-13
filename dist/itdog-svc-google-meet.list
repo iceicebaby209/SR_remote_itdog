@@ -1,0 +1,9 @@
+# Auto-generated from https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/google_meet.lst
+# Mode: domain_suffix
+# Do not edit manually. Edit sources.yaml instead.
+
+DOMAIN-SUFFIX,meetings.clients6.google.com
+DOMAIN-SUFFIX,meetings.googleapis.com
+DOMAIN-SUFFIX,hangouts.googleapis.com
+DOMAIN-SUFFIX,meet.google.com
+DOMAIN-SUFFIX,stream.meet.google.com

@@ -1,0 +1,5 @@
+# Auto-generated from https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/cloudfront.lst
+# Mode: domain_suffix
+# Do not edit manually. Edit sources.yaml instead.
+
+DOMAIN-SUFFIX,cloudfront.net

@@ -1,0 +1,8 @@
+# Auto-generated from https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/roblox.lst
+# Mode: domain_suffix
+# Do not edit manually. Edit sources.yaml instead.
+
+DOMAIN-SUFFIX,roblox.com
+DOMAIN-SUFFIX,rbxcdn.com
+DOMAIN-SUFFIX,robloxdev.com
+DOMAIN-SUFFIX,rbxinfra.net

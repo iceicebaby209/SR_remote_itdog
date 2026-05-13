@@ -1,0 +1,7 @@
+# Auto-generated from https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/google_meet.lst
+# Mode: ip_cidr no-resolve
+# Do not edit manually. Edit sources.yaml instead.
+
+IP-CIDR,74.125.247.128/32,no-resolve
+IP-CIDR,74.125.250.0/24,no-resolve
+IP-CIDR,142.250.82.0/24,no-resolve

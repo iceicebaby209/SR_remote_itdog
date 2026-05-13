@@ -1,0 +1,21 @@
+# Auto-generated from https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/meta.lst
+# Mode: domain_suffix
+# Do not edit manually. Edit sources.yaml instead.
+
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,ig.me
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,internalfb.com
+DOMAIN-SUFFIX,oculus.com
+DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,threads.net
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,whatsapp.biz
+DOMAIN-SUFFIX,wa.me
+DOMAIN-SUFFIX,circlecrewpinkcrowd.com

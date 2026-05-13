@@ -1,0 +1,8 @@
+# Auto-generated from https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/cloudflare.lst
+# Mode: domain_suffix
+# Do not edit manually. Edit sources.yaml instead.
+
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,one.one.one.one
+DOMAIN-SUFFIX,cloudflarestatus.com
+DOMAIN-SUFFIX,cdnjs.com

@@ -1,0 +1,6 @@
+# Auto-generated from https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/roblox.lst
+# Mode: ip_cidr no-resolve
+# Do not edit manually. Edit sources.yaml instead.
+
+IP-CIDR,128.116.0.0/17,no-resolve
+IP-CIDR,209.206.40.0/21,no-resolve
