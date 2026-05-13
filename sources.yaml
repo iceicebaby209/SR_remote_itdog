@@ -1,0 +1,144 @@
+# SR rule-sets builder — sources configuration
+# Targets branch: SR_remote_itdog
+#
+# Conversion modes:
+#   passthrough    — copy as-is (source already in SR format)
+#   domain_suffix  — bare domains  → DOMAIN-SUFFIX,<domain>
+#   ip_cidr        — bare CIDRs    → IP-CIDR,<cidr>[,no-resolve]
+
+sources:
+  # ============================================================
+  # MAIN DOMAIN LIST (already SR-compatible, passthrough)
+  # ============================================================
+  - name: itdog-inside
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-clashx.lst
+    convert: passthrough
+
+  # ============================================================
+  # SERVICES — DOMAINS (Services/*.lst, mode: domain_suffix)
+  # NOTE: most of these are already covered by itdog-inside above.
+  # Kept separate for granular service-level toggling.
+  # ============================================================
+  - name: itdog-svc-cloudflare
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/cloudflare.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-cloudfront
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/cloudfront.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-digitalocean
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/digitalocean.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-discord
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/discord.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-google-ai
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/google_ai.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-google-meet
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/google_meet.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-google-play
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/google_play.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-hdrezka
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/hdrezka.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-hetzner
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/hetzner.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-meta
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/meta.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-ovh
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/ovh.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-roblox
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/roblox.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-telegram
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/telegram.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-tiktok
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/tiktok.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-twitter
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/twitter.lst
+    convert: domain_suffix
+
+  - name: itdog-svc-youtube
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/youtube.lst
+    convert: domain_suffix
+
+  # ============================================================
+  # SERVICES — IPv4 SUBNETS (Subnets/IPv4/*.lst, mode: ip_cidr)
+  # All with no_resolve: DNS lookups not triggered.
+  # Capitalized duplicates (Discord/Meta/Twitter.lst) skipped — identical content.
+  # ============================================================
+  - name: itdog-ip-cloudflare
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/cloudflare.lst
+    convert: ip_cidr
+    no_resolve: true
+
+  - name: itdog-ip-cloudfront
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/cloudfront.lst
+    convert: ip_cidr
+    no_resolve: true
+
+  - name: itdog-ip-digitalocean
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/digitalocean.lst
+    convert: ip_cidr
+    no_resolve: true
+
+  - name: itdog-ip-discord
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/discord.lst
+    convert: ip_cidr
+    no_resolve: true
+
+  - name: itdog-ip-google-meet
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/google_meet.lst
+    convert: ip_cidr
+    no_resolve: true
+
+  - name: itdog-ip-hetzner
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/hetzner.lst
+    convert: ip_cidr
+    no_resolve: true
+
+  - name: itdog-ip-meta
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/meta.lst
+    convert: ip_cidr
+    no_resolve: true
+
+  - name: itdog-ip-ovh
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/ovh.lst
+    convert: ip_cidr
+    no_resolve: true
+
+  - name: itdog-ip-roblox
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/roblox.lst
+    convert: ip_cidr
+    no_resolve: true
+
+  - name: itdog-ip-telegram
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/telegram.lst
+    convert: ip_cidr
+    no_resolve: true
+
+  - name: itdog-ip-twitter
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/twitter.lst
+    convert: ip_cidr
+    no_resolve: true
