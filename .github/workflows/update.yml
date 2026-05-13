@@ -1,0 +1,40 @@
+name: Update lists
+
+on:
+  schedule:
+    - cron: '17 4 * * *'   # каждый день в 04:17 UTC
+  workflow_dispatch:        # ручной запуск из вкладки Actions
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install pyyaml
+
+      - name: Build lists
+        run: python scripts/build.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          if git diff --cached --quiet; then
+            echo "No upstream changes — skipping commit."
+          else
+            CHANGED=$(git diff --cached --name-only | wc -l)
+            git commit -m "auto: refresh lists ($CHANGED file(s) changed)"
+            git push
+          fi
