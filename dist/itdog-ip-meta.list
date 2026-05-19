@@ -41,7 +41,7 @@ IP-CIDR,129.134.164.0/23,no-resolve
 IP-CIDR,129.134.168.0/21,no-resolve
 IP-CIDR,129.134.176.0/20,no-resolve
 IP-CIDR,129.134.194.0/23,no-resolve
-IP-CIDR,129.134.196.0/24,no-resolve
+IP-CIDR,129.134.196.0/23,no-resolve
 IP-CIDR,157.240.0.0/17,no-resolve
 IP-CIDR,157.240.128.0/23,no-resolve
 IP-CIDR,157.240.131.0/24,no-resolve
