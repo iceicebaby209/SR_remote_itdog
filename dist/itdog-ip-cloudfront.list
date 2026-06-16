@@ -2,6 +2,7 @@
 # Mode: ip_cidr no-resolve
 # Do not edit manually. Edit sources.yaml instead.
 
+IP-CIDR,23.228.249.0/24,no-resolve
 IP-CIDR,120.52.22.96/27,no-resolve
 IP-CIDR,23.228.222.0/24,no-resolve
 IP-CIDR,205.251.249.0/24,no-resolve
@@ -36,9 +37,11 @@ IP-CIDR,18.244.0.0/15,no-resolve
 IP-CIDR,205.251.208.0/20,no-resolve
 IP-CIDR,3.165.0.0/16,no-resolve
 IP-CIDR,3.168.0.0/14,no-resolve
+IP-CIDR,23.228.251.0/24,no-resolve
 IP-CIDR,65.9.128.0/18,no-resolve
 IP-CIDR,130.176.128.0/18,no-resolve
 IP-CIDR,23.228.221.0/24,no-resolve
+IP-CIDR,23.228.248.0/24,no-resolve
 IP-CIDR,58.254.138.0/25,no-resolve
 IP-CIDR,205.251.206.0/23,no-resolve
 IP-CIDR,54.230.208.0/20,no-resolve
@@ -77,6 +80,7 @@ IP-CIDR,52.84.0.0/15,no-resolve
 IP-CIDR,143.204.0.0/16,no-resolve
 IP-CIDR,144.220.0.0/16,no-resolve
 IP-CIDR,120.52.153.192/26,no-resolve
+IP-CIDR,23.228.250.0/24,no-resolve
 IP-CIDR,119.147.182.0/25,no-resolve
 IP-CIDR,120.232.236.0/25,no-resolve
 IP-CIDR,111.13.185.64/27,no-resolve
@@ -100,6 +104,7 @@ IP-CIDR,204.246.164.0/22,no-resolve
 IP-CIDR,13.35.0.0/16,no-resolve
 IP-CIDR,204.246.174.0/23,no-resolve
 IP-CIDR,3.164.128.0/17,no-resolve
+IP-CIDR,24.110.128.0/17,no-resolve
 IP-CIDR,3.172.0.0/18,no-resolve
 IP-CIDR,36.103.232.0/25,no-resolve
 IP-CIDR,119.147.182.128/26,no-resolve
